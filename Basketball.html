@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball counter</title>
+    <link rel="preconnect"
+    href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="flexbox">
+        <div class="container">
+            <div class="box">
+                <h2>Home</h2>
+                <div class="counterBox">
+                    <p id="number1" class="number"></p>
+                </div>
+                <div class="btnBox">
+                    <button class="btn" onclick="oneMoreH()">+ 1</button>
+                    <button class="btn" onclick="twoMoreH()">+ 2</button>
+                    <button class="btn" onclick="threeMoreH()">+ 3</button>
+                </div>
+            </div>
+            <div class="box">
+                <h2>Away</h2>
+                <div class="counterBox">
+                    <p id="number2" class="number"></p>
+                </div>
+                <div class="btnBox">
+                    <button class="btn" onclick="oneMoreA()">+ 1</button>
+                    <button class="btn" onclick="twoMoreA()">+ 2</button>
+                    <button class="btn" onclick="threeMoreA()">+ 3</button>
+                </div>
+            </div>
+        </div>
+        <button id="reset" onclick="reset()">Reset the game</button>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

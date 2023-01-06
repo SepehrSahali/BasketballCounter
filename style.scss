@@ -1,0 +1,55 @@
+@import "mixin";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: $blueColor;
+}
+.flexbox{
+    background-color: $blackLowOpacity;
+    border-radius: 30px;
+    padding: 100px 50px;
+    text-align: center;
+    margin: 50px auto;
+    width: 500px;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    .box{
+        text-align: center;
+    }
+    h2{
+        @include textStyle (#fff, 50px ,bold);
+    }
+    .btnBox{
+        margin: 0 auto;
+    }
+    .btn{
+        margin:20px 2px;
+        @include btnStyle((10px 6px),#fff,$blackLowOpacity,(2px solid #fff),5px);
+        width: 50px;
+        font-family: 'Orbitron', sans-serif;
+    }
+    .counterBox{
+        justify-content: center;
+
+        @include counterBg (170px,0,20px);
+        .number{
+            font-family: 'Orbitron', sans-serif;
+            margin-top: 30px;
+            padding: 30px auto;
+            color:rgb(220, 74, 74);
+            font-size: 90px;
+        }
+
+    }
+}
+#reset{
+    margin-top: 10px;
+    @include btnStyle((10px 100px),#fff,$blackLowOpacity,(2px solid #fff),5px);
+}

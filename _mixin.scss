@@ -1,0 +1,19 @@
+@mixin textStyle ($textColor,$textSize,$textWeight){
+    color: $textColor;
+    font-size: $textSize;
+    font-weight: $textWeight;
+}
+@mixin btnStyle ($btnPad,$btnColor,$btnBgColor,$btnBorder,$btnBorderR){
+    padding: $btnPad;
+    color: $btnColor;
+    background-color: $btnBgColor;
+    border: $btnBorder;
+    border-radius: $btnBorderR;
+}
+@mixin counterBg ($width ,$counterBgC,$borderR){
+    width: $width;
+    background-color: $counterBgC;
+    border-radius: $borderR;
+}
+$blueColor : rgb(67, 171, 235);
+$blackLowOpacity : rgb(0,0,0,0.3);
